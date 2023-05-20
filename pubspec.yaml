@@ -1,0 +1,125 @@
+name: pokemon_app
+description: 'Aplicación que proporciona diversidad de información acerca de los pokemons'
+publish_to: 'Ximing'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Flutter Riverpod [ Android iOS Linux MacOs Web Windows ]
+  # A simple way to access state from anywhere in your application while robust and testable.
+  flutter_riverpod: ^2.3.1
+
+  # Rename [ Android iOS Linux MacOs Windows ]
+  # Helps you to change or rename your flutter project BundleId and AppName
+  #flutter pub global activate rename
+  #flutter pub global run rename --bundleId com.example.appname
+  #flutter pub global run rename --appname "appname"
+  rename: ^2.1.1
+
+  # Intl [ Android iOS Linux MacOs Web Windows ]
+  # Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.
+  intl: ^0.17.0
+
+  # Firebase Core [ Android iOS MacOs Web ]
+  # Flutter plugin for Firebase Core, enabling connecting to multiple Firebase apps.
+  firebase_core: ^2.9.0
+
+  # Firebase Auth [ Android iOS MacOs Web ]
+  # Flutter plugin for Firebase Auth, enabling Android and iOS authentication using passwords, phone numbers and identity providers like Google, Facebook and Twitter.
+  firebase_auth: ^4.4.1
+
+  # Google Fonts [ Android iOS Linux MacOs Web Windows ]
+  # A Flutter package to use fonts from fonts.google.com. Supports HTTP fetching, caching, and asset bundling.
+  google_fonts:
+
+  # - - > No Usado
+  # Extended Image [ Android iOS Linux MacOs Web Windows ] 
+  # Official extension image, support placeholder(loading)/ failed state, cache network, zoom/pan, photo view, slide out page, editor(crop,rotate,flip), painting etc.
+  extended_image: ^7.0.2
+  
+  # Flutter Secure Storage [ Android iOS Linux MacOs Web Windows ]
+  # Flutter Secure Storage provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
+  flutter_secure_storage: ^8.0.0
+
+  # Shared Preferences [ Android iOS Linux MacOs Web Windows ]
+  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
+  shared_preferences: ^2.1.0
+
+  # Retrofit [ Android iOS Linux MacOs Web Windows ]
+  # retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.
+  retrofit: ^4.0.1
+
+  # Flutter SVG [ Android iOS Linux MacOs Web Windows ]
+  # An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
+  flutter_svg: ^2.0.5 
+
+  # Animated Search Bar [ Android iOS Linux MacOs Web Windows ]
+  # A Beautiful and Simple SearchBar widget with animation transition. It can be fully customized with label, labelStyle, searchDecoration, etc. It also maintains onChange state.
+  animated_search_bar: ^2.5.0
+
+  # Go Router [ Android iOS Linux MacOs Web Windows ]
+  # A declarative router for Flutter based on Navigation 2 supporting deep linking, data-driven routes and more
+  go_router: ^6.5.6
+
+  # Cached Network Image [ Android iOS MacOs ]
+  # Flutter library to load and cache network images. Can also be used with placeholder and error widgets.
+  cached_network_image: ^3.2.3
+
+  # Flutter Cache Manager [ Android iOS MacOs ]
+  # Generic cache manager for flutter. Saves web files on the storages of the device and saves the cache info using sqflite.
+  flutter_cache_manager: ^3.3.0
+
+  # Dio [ Android iOS Linux MacOs Web Windows ]
+  # A powerful HTTP package for Dart/Flutter, which supports Global settings, Interceptors, FormData, Aborting and canceling a request, Files uploading and downloading, Requests timeout, Custom adapters, etc.
+  dio: ^5.1.1
+
+  # Json Annotation [ Android iOS Linux MacOs Web Windows ]
+  # Classes and helper functions that support JSON code generation via the `json_serializable` package.
+  json_annotation: ^4.8.0
+
+  # Network Info Plus [ Android iOS Linux MacOs Web Windows ]
+  # Flutter plugin for discovering information (e.g. WiFi details) of the network.
+  network_info_plus: ^3.0.3
+   
+  # Permission Handler [ Android iOS ]
+  # Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.
+  permission_handler: ^8.1.6
+
+  # Url Launcher [ Android iOS Linux MacOs Web Windows ]
+  # Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.
+  url_launcher: ^6.1.10
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+  # Json Serializable [ Linux MacOs Windows ]
+  # Automatically generate code for converting to and from JSON by annotating Dart classes.
+  json_serializable: ^6.6.1
+
+  # Build Runner [ Linux MacOs Windows ]
+  # A build system for Dart code generation and modular compilation.
+  # flutter pub run build_runner build
+  build_runner: ^2.3.3
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/app_icon/
+    - assets/images/
+    - assets/images/pokemon_types/
+    - assets/images/bottom_navigation_bar/
+    - assets/images/auth/
+    - assets/images/settings/
+    - assets/icons/
+
+# Logo maker -> https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=circle&effects=none&name=ic_launcher
